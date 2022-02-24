@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane" minHeight="800.0" minWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.GenerateViewController">
+   <children>
+      <ImageView fx:id="image" fitHeight="800.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="WebScrapeView.png" />
+         </image></ImageView>
+      <Button layoutX="342.0" layoutY="517.0" mnemonicParsing="false" onAction="#grabHTML" text="Grab Market Prices" />
+      <ProgressBar fx:id="progBar" layoutX="172.0" layoutY="417.0" prefHeight="25.0" prefWidth="457.0" progress="0.0" />
+      <Text layoutX="235.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click the button to generate a CSV file of all TF2 Killstreak Kits!" />
+      <Button fx:id="homeButton" layoutX="692.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToHomePage" prefHeight="25.0" prefWidth="94.0" text="Home">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Text fx:id="successText" layoutX="322.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Successfully Created .csv File!" />
+   </children>
+</AnchorPane>
