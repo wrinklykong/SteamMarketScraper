@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane" minHeight="800.0" minWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.ItemListViewController">
+   <children>
+      <TableView fx:id="infoTable" editable="true" fixedCellSize="20.0" layoutX="29.0" layoutY="83.0" prefHeight="545.0" prefWidth="750.0">
+        <columns>
+          <TableColumn fx:id="itemNameCol" prefWidth="360.0" text="Name of Kit" />
+          <TableColumn fx:id="fabCostCol" minWidth="0.0" prefWidth="118.0" text="Price of Fabricator" />
+            <TableColumn fx:id="kitCostCol" prefWidth="77.0" text="Price of Kit" />
+            <TableColumn fx:id="diffCol" maxWidth="700.0" prefWidth="194.0" text="Price Difference" />
+        </columns>
+      </TableView>
+      <Text layoutX="213.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Table Information Loaded:">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Button fx:id="homeButton" layoutX="380.0" layoutY="749.0" mnemonicParsing="false" onAction="#goToHomePage" text="Home" />
+      <Button fx:id="fileUploadButton" layoutX="29.0" layoutY="649.0" mnemonicParsing="false" onAction="#loadFile" text="Select .CSV file" />
+   </children>
+</AnchorPane>
