@@ -43,3 +43,5 @@ JavaFX and Gson (A .JSON parser from Google). You may need to download
 these for your program to work.
 
 I plan on compiling it into a .exe to launch.
+
+Programmed in about 3 days.
